@@ -1,0 +1,19 @@
+.title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 100%;
+    text-align: center;
+    font-size: 4rem; 
+    color: $color-mediumWarm;
+    // margin-bottom: 6em;
+
+    &__head{
+        font-size: 15rem;
+        font-family: $font-cursive;
+    }
+    &__subtitle{
+        color: $color-light;
+
+    }
+  }
+  

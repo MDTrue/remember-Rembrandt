@@ -1,0 +1,16 @@
+.wrapper {
+    padding: 0em 2em 0em 2em;
+    background-color: $color-dark;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    grid-gap: 2em;
+
+    // flex-flow: row wrap;
+    // padding: 20px;
+    // justify-content: space-around;
+    // align-content: flex-start;
+    // overflow: auto;
+  }
+  

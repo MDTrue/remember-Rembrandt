@@ -6,7 +6,7 @@ import Nav from "./components/Nav";
 import portraits from "./portraits.json";
 
 
-class App extends Component {
+class App extends Component {yar
   //set initial state
   state = {
     portraits,
@@ -33,7 +33,12 @@ class App extends Component {
   checkScore = () => {
     if (this.state.score > this.state.topScore) {
       this.setState({
-        topScore: this.state.score
+        topScore: this.state.score,
+        message: "You have the top score!",
+        score: 0,
+        clickedPortraitIds: [],
+        portraits: this.shuffleArray(this.state.portraits)
+        
       })
     }
   }
@@ -41,9 +46,9 @@ class App extends Component {
   handleClick = id => {
     let clickedPortraitIds = this.state.clickedPortraitIds
     if (clickedPortraitIds.includes(id)) {
-      if (
+      
         this.checkScore()
-      )
+     
         this.setState({
           score: 0,
           message: "You already picked that Rembrandt!",
